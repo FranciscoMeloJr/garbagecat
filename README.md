@@ -8,7 +8,12 @@ A command line tool that parses Java garbage collection logging and does analysi
   * Sun/Oracle JDK 1.5 and higher
   * Best utilized with the following GC logging options:
 
+JDK5 - JDK8:
 >-XX:+PrintGC -Xloggc:gc.log -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintGCApplicationStoppedTime
+
+JDK9+:
+
+>-Xlog:gc*:file=gc.log
 
 ## Installation ##
 
